@@ -12,8 +12,8 @@ public class Visual extends JFrame{
 	 
 	public Visual(){
 		super("por andres2288");
-	    initComponents();
-	      contenedor= new DibujarTodo(panel1,panel1);
+	    //initComponents();
+	     // contenedor= new DibujarTodo(panel1,panel1);
 	      dc1.addElement("http://123.220.250.252/");
 	      dc1.addElement("http://www.odate-houjinkai.or.jp/snap.jpg");
 	      dc1.addElement("http://www.hifido.co.jp/camera/osu.jpg");
