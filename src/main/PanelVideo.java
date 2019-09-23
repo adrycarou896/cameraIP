@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 public class PanelVideo extends JPanel{
 	
 	private boolean hayConexion=false;
-	private String direccionIP="";
+	private String direccionIP="192.168.1.105";
 	public BufferedImage frame=null;
 	
 	public boolean isHayConexion() {
@@ -41,7 +41,7 @@ public class PanelVideo extends JPanel{
 		Graphics2D g2 = (Graphics2D)g;
 		g2.setColor(Color.WHITE);
 		g2.fillRect(0, 0, getWidth(), getHeight());
-		if(hayConexion){
+		//if(hayConexion){
 			try{
 				URL url = new URL(direccionIP);
 				frame = ImageIO.read(url);
@@ -55,11 +55,11 @@ public class PanelVideo extends JPanel{
 				hayConexion=false;
 				g2.drawString(ex.toString(), 5, 15);
 			}
-		}
+		/*}
 		else{
 			g2.setColor(Color.BLACK);
 			g2.drawString("No se ha establecido conexión con el dispositivo", 5, 15);
-		}
+		}*/
 	}
 	
 	
